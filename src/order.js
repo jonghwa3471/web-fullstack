@@ -1,3 +1,4 @@
+/* eslint-disable no-constant-condition */
 import fileSystem from "fs";
 import readlineSyncModule from "readline-sync";
 
@@ -83,7 +84,7 @@ while (turnOff) {
     let lines = [];
     while (true) {
       const line = readlineSyncModule.question(
-        "내용을 입력하세요. 여러 줄 입력 가능: "
+        "내용을 입력하세요. 여러 줄 입력 가능: ",
       );
       if (line === "!끝") break;
       lines.push(line);

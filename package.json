@@ -4,13 +4,26 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js ",
+    "dev": "pm2-dev index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write ."
   },
   "author": "",
   "license": "MIT",
   "description": "",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.4",
     "crypto-js": "^4.2.0",
-    "readline-sync": "^1.4.10"
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "express": "^5.1.0",
+    "prettier": "^3.2.5",
+    "readline-sync": "^1.4.10",
+    "http-errors": "^2.0.0"
   }
 }

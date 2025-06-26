@@ -23,12 +23,16 @@ const operator1 = "*";
 switch (operator1) {
   case "+":
     console.log("더하기");
+    break;
   case "-":
     console.log("빼기");
+    break;
   case "*":
     console.log("곱하기");
+    break;
   case "/":
     console.log("나누기");
+    break;
   default:
     console.log("연산기호가 아님");
 }
